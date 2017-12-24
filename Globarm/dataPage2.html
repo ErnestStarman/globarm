@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/global.css" />
+		<link rel="stylesheet" href="css/dataPage.css" />
+		<link rel="shortcut icon" href="img/logoEarth.ico" />
+		<link rel="bookmark" href="img/logoEarth.ico" type="image/x-icon" 　/>
+		<!--<link rel="stylesheet" media="screen and (max-width:900px)" href="css/newsPage980.css" />-->
+		<link rel="stylesheet" media="screen and (max-width:600px)" href="css/dataPage480.css" />
+		<script src="js/jquery-3.2.0.min.js"></script>
+		<script src="js/echarts.js"></script>
+		<script src="js/vintage.js"></script>
+		<script src="js/dataPageCharts.js"></script>
+		<script src="js/temperatureGlobe.js"></script>
+		<script src="js/china.js"></script>
+		<!--[if lt IE 9]>
+　　　　		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+		<![endif]-->
+		<meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no" />
+		<!--<script src="js/jquery-3.2.0.min.js"></script>-->
+		<title>Globarm-可视化</title>
+	</head>
+
+	<body>
+		<a name="topTitle">
+		</a>
+		<div id="titleBar" class="titleBar">
+
+			<div class="titleBarLogo"></div>
+			<div id="loginLogo">
+				<div>
+					<div class="loginLogoImg1"></div>
+					<div class="loginLogoImg2"></div>
+				</div>
+			</div>
+			<div id="titleBarNav">
+				<ul class="titleBarNavUl">
+					<li>
+						<a href="HomePage.html">首页</a>
+					</li>
+					<li>
+						<a href="NewsPage.html">新闻</a>
+					</li>
+					<li>
+						<a href="#">数据</a>
+					</li>
+					<li>
+						<a href="index.html">更多介绍</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="chooseDiv">
+
+			<div class="chooseUlDiv">
+				<ul class="chooseUl">
+					<li class="chooseLi chooseLi2">空气质量</li>
+
+					<li class="chooseLi chooseLi1">全球气温</li>
+
+					<!--<li class="chooseLi chooseLi3">全国主要城市空气质量</li>-->
+				</ul>
+			</div>
+
+		</div>
+		<div class="mapDiv">
+
+			<div id="main" style="width: 100%;height:400px;"></div>
+		</div>
+
+		<div class="endingBeforeDiv">
+			<div class="endingBeforeDivContent">
+				<div class="endingBeforeDivContentDiv endingBeforeDivContentDiv1">
+					<div>相关链接</div>
+					<div>
+						<a href="http://www.bbc.com/earth/search/globe%20warm">BBC相关新闻
+					</div></a>
+					<div><a href="http://www.globalchange.gov/"> Global Change.gov</div></a>
+					<div><a href="http://web.unep.org/">联合国环境规划署</div></a>
+				</div>
+				<div class="endingBeforeDivContentDiv">
+					<div>了解更多</div>
+					<div>网站介绍</div>
+					<div>更多</div>
+				</div>
+				<div class="endingBeforeDivContentDiv endingBeforeDivContentDiv3">
+					<div>联系方式</div>
+					<div><address>E-mail:<br/>erneststarman@outlook.com
+					<br />Tel: 86-159xxxxxxxx
+					</address></div>
+				</div>
+				<div class="endingBeforeSocialDiv">
+					<hr class="noneDisplay appear480" />
+					<div class="socialMediaDiv">
+
+						<div class="socialMediaQQ"></div>
+						<div class="socialMediaWeibo"></div>
+						<div class="socialMediaWeChat"></div>
+						<div class="socialMediaQZone"></div>
+						<div class="socialMediaInsta"></div>
+						<div class="socialMediaTieba"></div>
+					</div>
+					<hr class="noneDisplay" />
+				</div>
+			</div>
+		</div>
+		<div class="endingDiv">
+			<div class="endingDivContent">
+				<div class="endingDivMeanings">
+					<div class="">
+						本网站部分图片文字来源为互联网
+						<br /> 爱护环境，共同努力 :)
+						<br /> Join Team Earth
+					</div>
+				</div>
+				<div class="endingDivCopyRight">
+					CopyRight @ 2017 张炜-CCNU
+				</div>
+			</div>
+		</div>
+
+		<script>
+			window.onload = function() {
+				var myChart = echarts.init(document.getElementById('main'));
+				myChart.showLoading();
+				setTimeout(function() {
+					myChart.setOption(option2);
+					setTimeout(function() {
+						myChart.hideLoading();
+					}, 500);
+				}, 1500);
+				var flag = 2;
+				$('.chooseLi2').click(function() {
+					if(flag == 1) {
+						myChart.clear();
+						myChart = echarts.init(document.getElementById('main'));
+						flag = 2;
+						myChart.showLoading();
+						setTimeout(function() {
+							myChart.setOption(option2);
+							setTimeout(function() {
+								myChart.hideLoading();
+							}, 500);
+						}, 1000);
+					}
+				});
+				$('.chooseLi1').click(function() {
+					if(flag == 2) {
+						myChart.clear();
+						myChart = echarts.init(document.getElementById('main'));
+						flag = 1;
+						myChart.showLoading();
+						setTimeout(function() {
+							myChart.setOption(option);
+							setTimeout(function() {
+								myChart.hideLoading();
+							}, 500);
+						}, 1000);
+					}
+				});
+
+			}
+		</script>
+
+	</body>
+
+</html>

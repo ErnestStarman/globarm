@@ -1,0 +1,136 @@
+@keyframes earthAnimation{
+	from{transform: scale(2) translateY(-300%);opacity: 0;}
+	/*25%{
+		transform: translateY(50%);
+	}
+	50%{
+		transform: translateY(-0%);
+	}
+	70%{
+		transform:translateY(50%);
+	}
+	85%{
+		transform: translateY(30%);
+	}*/
+	to{transform: scale(1) translateY(0);opacity: 1;}
+}
+@-webkit-keyframes earthAnimation{
+	from{-webkit-transform: scale(2) translateY(-300px);opacity: 0;}
+	/*25%{
+		-webkit-transform: translateY(50%);
+	}
+	50%{
+		-webkit-transform: translateY(-0%);
+	}
+	70%{
+		-webkit-transform:translateY(50%);
+	}
+	85%{
+		-webkit-transform: translateY(30%);
+	}*/
+	to{-webkit-transform: scale(1) translateY(0);opacity: 1;}
+}
+@keyframes earthChange{
+	from{background-image: url(../img/planets/moveEarth2.png);}
+	8%{
+		background-image: url(../img/planets/moveEarth2.png);
+	}
+	16%{
+		background-image: url(../img/planets/moveEarth3.png);
+	}
+	24%{
+		background-image: url(../img/planets/moveEarth4.png);
+	}
+	32%{
+		background-image: url(../img/planets/moveEarth5.png);
+	}
+	40%{
+		background-image: url(../img/planets/moveEarth6.png);
+	}
+	48%{
+		background-image: url(../img/planets/moveEarth7.png);
+	}
+	56%{
+		background-image: url(../img/planets/moveEarth8.png);
+	}
+	64%{
+		background-image: url(../img/planets/moveEarth9.png);
+	}
+	72%{
+		background-image: url(../img/planets/moveEarth10.png);
+	}
+	80%{
+		background-image: url(../img/planets/moveEarth11.png);
+	}
+	88%{
+		background-image: url(../img/planets/moveEarth12.png);
+	}
+	94%{
+		background-image: url(../img/planets/moveEarth13.png);
+	}
+	100%{
+		background-image: url(../img/planets/moveEarth14.png);
+	}
+}
+@-webkit-keyframes earthChange{
+	from{background-image: url(../img/planets/moveEarth1.png);}
+	8%{
+		background-image: url(../img/planets/moveEarth2.png);
+	}
+	16%{
+		background-image: url(../img/planets/moveEarth3.png);
+	}
+	24%{
+		background-image: url(../img/planets/moveEarth4.png);
+	}
+	32%{
+		background-image: url(../img/planets/moveEarth5.png);
+	}
+	40%{
+		background-image: url(../img/planets/moveEarth6.png);
+	}
+	48%{
+		background-image: url(../img/planets/moveEarth7.png);
+	}
+	56%{
+		background-image: url(../img/planets/moveEarth8.png);
+	}
+	64%{
+		background-image: url(../img/planets/moveEarth9.png);
+	}
+	72%{
+		background-image: url(../img/planets/moveEarth10.png);
+	}
+	80%{
+		background-image: url(../img/planets/moveEarth11.png);
+	}
+	88%{
+		background-image: url(../img/planets/moveEarth12.png);
+	}
+	94%{
+		background-image: url(../img/planets/moveEarth13.png);
+	}
+	100%{
+		background-image: url(../img/planets/moveEarth14.png);
+	}
+}
+@keyframes moonRotate{
+	from{transform: rotate(0deg);}
+	to{transform: rotate(360deg);}
+}
+@-webkit-keyframes moonRotate{
+	from{
+		-webkit-transform: rotate(0deg);
+	}
+	to{
+		-webkit-transform: rotate(-360deg);
+	}
+}
+@keyframes fadeGray{
+	from{filter:none}
+	to{filter: grayscale(100%);}
+}
+@-webkit-keyframes fadeGray{
+	from{}
+	to{-webkit-filter: grayscale(100%);}
+}

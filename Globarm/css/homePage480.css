@@ -1,0 +1,232 @@
+
+@charset "utf-8";
+@import url("homePageAnimation.css");
+* {
+	width: auto;
+}
+html,body{
+	font-size: 14px;
+	font-family: ProximaNova, helvetica, arial, sans-serif, "方正兰亭超细黑简体","微软雅黑";
+	overflow-x:  hidden;
+	margin: 0px auto;
+}
+.visiblePage2A{
+	visibility: hidden;
+	height: 60;
+	width: 100%;
+}
+#titleBar {
+	height: auto;
+	width: 100%;
+	padding:0 0px;
+	position: fixed;
+	z-index: 100;
+	top: 0;
+}
+
+.titleBarLogo {
+	width: 50%;
+	height: 45px;
+	/*max-width: 200px;*/
+	margin-left: 25%;
+}
+
+#loginLogo>div {
+	width: auto;
+	float: none;
+	margin-top: 3px;
+	margin-right: 0px;
+	padding: 0px 10px 3px 10px;
+}
+
+#loginLogo {
+	width: 100%;
+	height: 48px;
+	position: absolute;
+}
+
+.loginLogoImg1 {
+	width: 28px;
+	height: 28px;
+	background-image: url(../img/cloud.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	float: left;
+	margin-top: 3px;
+	display: none;
+	
+}
+
+.loginLogoImg2 {
+	width: 35px;
+	height: 35px;
+	background-image: url(../img/people1.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	float: right;
+	margin-top: 3px;
+	margin-right: 10px;
+	display: none;
+}
+
+.titleBarNavUl {
+	background-color: transparent;
+	width: 100%;
+	height: 30px;
+	border-width: 0px;
+	text-align: center;
+	list-style-type: none;
+}
+
+#titleBarNav {
+	width: 100%;
+}
+
+.titleBarNavUl li {
+	width: 25%;
+	height: 28px;
+	font-size: 1rem;
+	word-wrap: break-word;
+	overflow: hidden;
+	border-right: solid 1px #efefef;
+	box-sizing: border-box;
+}
+
+.titleBarNavUl li:nth-child(4) {
+	border-right: 0px;
+}
+
+.titleBarNavUl li a {
+	padding: 0 0.25rem 0 0.25rem;
+	line-height: 28px;
+	color: #fff;
+	font-family: "微软雅黑";
+	font-weight: 800;
+}
+.Gaia{
+	width: 100%;
+	height: 100px;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.contentDiv2{
+	width: 100%;
+	height: 200vh;
+	margin: 0 auto;
+	text-align: center;
+	position:  initial;
+}
+.contentDiv3Left1Title {
+	line-height: 4rem;
+}
+.contentDiv3Left2{
+	width: 100%;
+	height: calc(100vh - 9rem);
+	background-position:center bottom;
+	background-size: contain;
+	background-image: url(../img/gaia2.png);
+}
+.photoContent{
+	width:100%;
+	height: 100vh;
+}
+.leftPhotoDiv{
+	width: 100%;
+	height: 100vh;
+	float: none;
+}
+.wordContentRight{
+	width: 100%;
+	height: 100%;
+	background-color: #efefef;
+	float: none;
+}
+.wordContentTitle{
+	width: 240px;
+	height: 100px;
+	background-image: url(../img/globeWarmingTitleM.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin: 0 auto;
+}
+.wordContentText{
+	width: 350px;
+	height: 350px;
+	margin-top: -20px;
+	margin-left:auto;
+	margin-right: auto;
+	background-image: url(../img/globeWarmingTexts.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.endingBeforeDiv {
+	width: auto;
+	height: auto;
+	margin: 0 auto;
+	background-color: #384e5f;
+	margin-top: -60px;
+	padding: 20px 1.5rem 20px;
+	text-align: center;
+}
+
+.endingBeforeDivContent {
+	height: 300px;
+}
+
+.endingBeforeDivContentDiv {
+	width: 50%;
+	box-sizing: border-box;
+	line-height: 1.2rem;
+	font-size: 0.9rem;
+	color: #efefef;
+	word-break: break-all;
+	height: auto;
+	border: none;
+}
+
+.endingBeforeDivContentDiv1 {}
+
+.endingBeforeDivContentDiv3 {
+	width: 100%;
+	height: auto;
+	margin-top: 10px;
+	border-top: solid 1px rgba(255,255,255,.7);
+}
+
+.endingBeforeDivContentDiv div:first-child {
+	font-size: 1.25rem;
+	font-weight: 800;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	color: #fefefe;
+}
+.appear480{
+	display:inherit;
+}
+.socialMediaDiv div{
+	width: 22px;
+	height: 22px;
+	display: inline-block;
+	margin:2px 4px;
+	border-radius: 2px;
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+	opacity: 0.7;
+}
